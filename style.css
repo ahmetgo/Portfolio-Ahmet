@@ -1,0 +1,174 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #596971;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2E3944;
+}
+#top {
+    bottom: 5px;
+    bottom: 20px;
+    display: none;
+    height: 100px;
+    position: fixed;
+    right: 20px;
+}
+div a{
+	text-decoration: none;
+}
+.container{
+	min-width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+.container .row{
+	background-color: #393E46;
+	padding-bottom: 15px;
+}
+.container .logo{
+	color: #00adb5;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	animation: animate 5s linear infinite;
+}
+@keyframes animate{
+	
+	0%,15%,35%,50%,60%,75%,95%
+	{
+		color:#00adb5;
+		text-shadow:none;
+	}
+	20%,35%,45%,50%,80%,90%
+	{
+		color:#FFF;
+		text-shadow: 0 0 10px #00adb5,
+		0 0 20px #00adb5,
+		0 0 40px #00adb5,
+		0 0 80px #00adb5,
+		0 0 160px #00adb5;
+	}
+}
+.menu{
+	margin-top: 40px;
+	text-align: center;
+}
+.menu a{
+	color: #eeeeee;
+	margin: 20px;	
+	transition: 300ms;
+}
+.menu a:hover{
+	color: #00adb5;
+}
+.write{
+	margin-top: 75px;
+	margin-left: 10%;
+}
+.write h2{
+	font-size: 50px;
+	color: #f6c065;
+	line-height: 50px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+.write #myElement{ 
+	color: #f6c065;
+	font-size: 30px;
+}
+.container .hakkimda{
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 70px;
+	border: 3px solid #000;
+}
+.container .üst-kisim{
+	min-height: 600px;
+}
+
+/*PORTFÖY*/
+
+.container .portfoy .design{
+	width: 400px;
+	height: 300px;
+}
+.container .portfoy{
+	text-align: center;	
+	padding-bottom: 100px;
+}
+.container .portfoy h1{
+	padding: 70px;
+	color: #eeeeee
+}
+.container .portfoy a{
+	transition: 300ms;
+}
+.container .portfoy a:hover{
+	opacity: 0.4;
+}
+.container .iletisim{
+	background-color: #686d76;
+	color: #eeeeee;
+	border: 3px solid #000;
+}
+.container .iletisim h3{
+	font-size: 24px;
+}
+.container .iletisim h1{
+	margin: 80px;
+}
+.container .iletisim .social-media{
+	margin: 50px 0 50px 0;
+}
+.container .footer{
+	background-color: #393e46;
+	align-items: center;
+	text-align: center;
+	height: 100px;
+}
+.container .footer h1{
+	font-size: 30px;
+	color: #eeeeee;
+}
+.container .social-media a{
+	font-size: 30px;
+	color: #eeeeee;
+	margin-left: 20px;
+	transition: 300ms;
+}
+.container .social-media a:hover{
+	color: #00adb5;
+}
+
+@media screen and (max-width: 500px) {
+  .üst-kisim{
+  	min-height: 100vh;
+  }
+  .üst-kisim img{
+  	display: none;
+  }
+  .iletisim img{
+  	display: none;
+  }
+  .container .social-media a{
+  	font-size: 20px;
+
+  }
+  .container .footer h1{
+  	font-size: 20px;
+  }
+  .container .iletisim h1{
+  	text-align: center;
+  }
+  .container .iletisim .isim{
+  	text-align: center;
+  }
+  .container .iletisim .social-media{
+  	text-align: center;
+  }
+  .container .footer .social-media{
+  	display: none;
+  }
+}
